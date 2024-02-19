@@ -32,3 +32,19 @@ Run container to upload environment file run as  . There is PORT variable in .en
 docker run -d --env-file .env --publish 8080:8080 --restart unless-stopped vbronfman/fastapiexample
 
 
+## ECS 
+ECS deployment with Fargate . Create  task definition 
+- image name docker.io/vladbronfman/fastapiexample:latest
+- new security group to expose 8080 (optional)
+- env variable PORT
+
+Create service
+- networking - addign publillc IP
+
+  In case of success , the IP can be viewed in Services -> servicename -> Tasks -> tasknum -> Configuration 
+
+## TODO
+
+Create CRUD routes with DB. 
+
+
