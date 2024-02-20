@@ -46,5 +46,6 @@ Create service
 ## TODO
 
 Create CRUD routes with DB. 
+Try out with Chainguard image docker pull cgr.dev/chainguard/python 
 
 
